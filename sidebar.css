@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  background-color: #abc4ff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.sidebar {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 720px;
+}
+.sidebar.shrink {
+  width: 110px;
+  position: relative;
+}
+
+.hideText {
+  display: none;
+}
+img {
+  width: 70px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.text > div:last-child {
+  font-size: 14px;
+}
+.text > div:first-child {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 6px;
+}
+.secondPart {
+  padding: 0 20px 20px 20px;
+}
+.secondPart > div {
+  display: flex;
+  gap: 30px;
+  padding-top: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.secondPart > div:hover {
+  transform: translateY(-6px);
+  transition: transform 0.2s ease;
+}
+.lastPart > div:first-child:hover {
+  transform: translateY(-6px);
+  transition: transform 0.2s ease;
+}
+.secondPart > div > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: #343a40;
+}
+
+input {
+  outline: none;
+  border-style: none;
+  font-size: 18px;
+  width: 150px;
+  font-weight: 400;
+  color: #14213d;
+}
+
+.hr {
+  height: 2px;
+  width: 200px;
+  background-color: rgb(194, 190, 190);
+  margin-left: 20px;
+  display: block;
+}
+
+.hrVisibility {
+  display: none;
+}
+.lastPart {
+  padding: 20px;
+}
+
+.lastPart > div {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.lastPart > div > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  color: #14213d;
+}
+.closer {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 280px;
+  top: 70px;
+  cursor: pointer;
+}
+.closer > i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.closer2 {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 280px;
+  top: 70px;
+  cursor: pointer;
+}
+.closer2 > i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+input::placeholder {
+  color: rgb(15, 14, 14);
+  opacity: 1;
+}
+.sidebar > i {
+  width: 26px;
+  height: 26px;
+}
+.darkMood {
+  display: flex;
+}
+.darkMood > div:last-child {
+  background-color: rgb(185, 181, 181);
+  border-radius: 60px;
+  width: 50px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.switch .indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dark {
+  background-color: #020202;
+}
+
+.dark .indicator {
+  transform: translateX(22px);
+}
+
+.textWhite {
+  color: white !important;
+}
+.textWhite::placeholder {
+  color: white !important;
+}
+
+.paddingLeft {
+  padding-left: 10px !important;
+}
